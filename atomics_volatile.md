@@ -1,6 +1,6 @@
 # Atomics
 
-In this post, have to discuss about the difference between atomic and volatile and synchronization.
+In this post, have to discuss about the difference between atomic, volatile and synchronization.
 
 ## Volatile
 When we apply volatile to a variable, it guarantees that read and writes establish a happens-before-relationship, much like acquiring and releasing mutex. Any changes done on volatile variable is immediately visible to all other threads. Incrementing counter with volatile keyword ensures that changed value is immediately updated to memory and subsequent reads by other threads also will see the latest value. volatile variable don't provide atomicity when multiple threads write and read on the same variable. 
